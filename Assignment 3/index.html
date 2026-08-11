@@ -2,39 +2,24 @@
 <html>
 <head>
     <title>Student Marks</title>
-
     <style>
         body
         {
             font-family: Georgia, serif;
-            background-color: #f2f2f2;
             text-align: center;
         }
-
         table
         {
             margin: 20px auto;
             border-collapse: collapse;
             border: 1px solid black;
         }
-
         th, td
         {
             border: 1px solid black;
             padding: 10px;
         }
 
-        input
-        {
-            width: 200px;
-            padding: 5px;
-        }
-
-        button
-        {
-            padding: 8px 15px;
-            margin: 10px;
-        }
     </style>
 </head>
 
@@ -115,7 +100,7 @@ function calculateMarks()
     row.insertCell(2).innerHTML = total;
     row.insertCell(3).innerHTML = percentage.toFixed(2) + "%";
 
-    // Clear input fields
+  
     document.getElementById("id").value = "";
     document.getElementById("name").value = "";
     document.getElementById("physics").value = "";
